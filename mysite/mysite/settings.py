@@ -38,13 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Package - pip install
-    "crispy_forms",
-    "crispy_bootstrap5",
-
     # Custom apps
     'accounts',
     'graph',
+
+
 ]
 
 MIDDLEWARE = [
@@ -130,8 +128,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR.joinpath('static'),
-                '/var/www/static/',
-]
+    ]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
